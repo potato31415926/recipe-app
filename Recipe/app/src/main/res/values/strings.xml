@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">家常菜</string>
+    <string name="author">俞祖乐\u3000202005100220\u3000移动应用开发2004班</string>
+    <string name="todo">TODO</string>
+    <string name="skip">跳过</string>
+    <string name="welcome_login">欢迎，这里是登录页面</string>
+    <string name="welcome_register">欢迎，这里是注册页面</string>
+    <string name="forget">忘记密码?</string>
+    <string name="click">点击这里</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="password">password</string>
+    <string name="username">username</string>
+    <string name="phone">phone</string>
+    <string name="password_confirm">password confirm</string>
+    <string name="search_recipe">搜索菜谱</string>
+    <string name="under_title">小白学做菜必备烹饪助手</string>
+    <string name="homepage">首页</string>
+    <string name="collect">收藏</string>
+    <string name="mine">我的</string>
+    <string name="coldfood">凉菜</string>
+    <string name="rice_food">下饭菜</string>
+    <string name="chip">小吃</string>
+    <string name="cake">蛋糕</string>
+    <string name="vegetable">素菜</string>
+    <string name="pork">猪肉</string>
+    <string name="recommend">精品好菜</string>
+    <string name="TODO">TODO</string>
+    <string name="search">搜索</string>
+    <string name="history">历史搜索记录</string>
+    <string name="detail">Detail</string>
+    <string name="toLogin">前往登录页面</string>
+    <string name="toRegister">前往注册页面</string>
+    <string name="collect_hint">还没有收藏的内容</string>
+</resources>

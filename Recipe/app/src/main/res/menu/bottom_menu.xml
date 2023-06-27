@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home"
+        android:title="@string/homepage"
+        android:icon="@drawable/icon_home" />
+    <item android:id="@+id/collect"
+        android:title="@string/collect"
+        android:icon="@drawable/icon_collect" />
+    <item android:id="@+id/mine"
+        android:title="@string/mine"
+        android:icon="@drawable/icon_mine" />
+</menu>

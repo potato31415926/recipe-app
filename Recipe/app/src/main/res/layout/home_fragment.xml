@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/toTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="20dp"
+        android:contentDescription="@string/TODO"
+        android:src="@drawable/icon_arrow_top" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/toSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="140dp"
+                android:backgroundTint="?attr/colorSecondary"
+                android:elevation="14dp"
+                android:paddingVertical="15dp"
+                android:text="@string/search_recipe"
+                android:textColor="?attr/dividerColor"
+                app:cornerRadius="10dp"
+                app:elevation="14dp"
+                app:icon="@drawable/icon_search"
+                app:iconGravity="textStart"
+                app:iconTint="?attr/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/topPanel"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@drawable/orange"
+                    android:orientation="vertical"
+                    android:padding="18dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/shaonv"
+                        android:text="@string/app_name"
+                        android:textColor="?attr/colorSecondary"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/transparent"
+                        android:text="@string/under_title"
+                        android:textColor="?attr/colorSecondary" />
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="20dp"
+                    android:paddingTop="30dp">
+
+                    <GridLayout
+                        android:id="@+id/grid_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:columnCount="4"
+                        android:padding="10dp"
+                        android:rowCount="2"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/cold_food"
+                            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_rowSpan="1"
+                            android:layout_columnSpan="1"
+                            android:layout_columnWeight="1"
+                            android:backgroundTint="?attr/colorSecondary"
+                            android:text="@string/coldfood"
+                            android:textColor="?attr/hintTextColor"
+                            app:icon="@drawable/coldfood"
+                            app:iconGravity="textTop"
+                            app:iconSize="40dp"
+                            app:iconTint="?attr/colorPrimary" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/rice_food"
+                            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_rowSpan="1"
+                            android:layout_columnSpan="1"
+                            android:layout_columnWeight="1"
+                            android:backgroundTint="?attr/colorSecondary"
+                            android:text="@string/rice_food"
+                            android:textColor="?attr/hintTextColor"
+                            app:icon="@drawable/sharpicons_soup"
+                            app:iconGravity="textTop"
+                            app:iconSize="40dp"
+                            app:iconTint="?attr/colorPrimary" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/chip"
+                            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_rowSpan="1"
+                            android:layout_columnSpan="1"
+                            android:layout_columnWeight="1"
+                            android:backgroundTint="?attr/colorSecondary"
+                            android:text="@string/chip"
+                            android:textColor="?attr/hintTextColor"
+                            app:icon="@drawable/chip"
+                            app:iconGravity="textTop"
+                            app:iconSize="40dp"
+                            app:iconTint="?attr/colorPrimary" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/cake"
+                            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_rowSpan="1"
+                            android:layout_columnSpan="1"
+                            android:layout_columnWeight="1"
+                            android:backgroundTint="?attr/colorSecondary"
+                            android:text="@string/cake"
+                            android:textColor="?attr/hintTextColor"
+                            app:icon="@drawable/cake"
+                            app:iconGravity="textTop"
+                            app:iconSize="40dp"
+                            app:iconTint="?attr/colorPrimary" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/vegetable"
+                            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_rowSpan="1"
+                            android:layout_columnSpan="1"
+                            android:layout_columnWeight="1"
+                            android:backgroundTint="?attr/colorSecondary"
+                            android:text="@string/vegetable"
+                            android:textColor="?attr/hintTextColor"
+                            app:icon="@drawable/vegetable"
+                            app:iconGravity="textTop"
+                            app:iconSize="40dp"
+                            app:iconTint="?attr/colorPrimary" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/pork"
+                            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_rowSpan="1"
+                            android:layout_columnSpan="1"
+                            android:layout_columnWeight="1"
+                            android:backgroundTint="?attr/colorSecondary"
+                            android:text="@string/pork"
+                            android:textColor="?attr/hintTextColor"
+                            app:icon="@drawable/pork"
+                            app:iconGravity="textTop"
+                            app:iconSize="40dp"
+                            app:iconTint="?attr/colorPrimary" />
+
+                    </GridLayout>
+
+                    <TextView
+                        android:id="@+id/recent_searches"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/weiti"
+                        android:paddingVertical="10dp"
+                        android:text="@string/recommend"
+                        android:textColor="?attr/hintTextColor"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/grid_layout" />
+
+
+                    <com.yuzule.recipe.view.NestedRecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/recent_searches" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+    </ScrollView>
+</FrameLayout>

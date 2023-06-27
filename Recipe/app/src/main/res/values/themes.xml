@@ -1,0 +1,47 @@
+<resources>
+    <!-- 默认主题 -->
+    <style name="Theme.Recipe" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#FF5722</item>
+        <item name="colorPrimaryVariant">#E64A19</item>
+        <item name="colorOnPrimary">#C0FFBC</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorOnSecondary">@color/teal_200</item>
+        <item name="hintTextColor">#000000</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">#8BC34A</item>
+        <item name="dividerColor">#BDBDBD</item>
+        <item name="android:colorBackground">?attr/colorSecondary</item>
+    </style>
+    <!-- 暗色主题 -->
+    <style name="Theme.Recipe.Dark" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#C37800</item>
+        <item name="colorPrimaryVariant">#010B4B</item>
+        <item name="colorOnPrimary">#005300</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#00392F</item>
+        <item name="colorOnSecondary">#021D4D</item>
+        <item name="hintTextColor">#AEAEAE</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">#F48041</item>
+        <item name="dividerColor">#FF9800</item>
+        <item name="android:colorBackground">?attr/colorSecondary</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">?attr/colorSecondary</item>
+        <item name="android:editTextColor">@color/white</item>
+    </style>
+
+    <style name="ToolbarTitleStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">@font/pop</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+
+</resources>
